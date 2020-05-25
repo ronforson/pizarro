@@ -17,7 +17,7 @@ const errSerializer = (err) => {
 }
 
 export const defaultLog = bunyan.createLogger({
-    name: config.get('app.id'),
+    name: config.get('logger.app_id'),
     env: config.get('env'),
     streams: [
         {
@@ -29,3 +29,13 @@ export const defaultLog = bunyan.createLogger({
         err: errSerializer,
     },
 });
+
+
+/**
+ * Takes a new set of objest and adds to the defaultLog
+ * @param  {Object} options   [fields to add to child logger]
+ * @return {Object}           [child logger]
+ */
+export const childLogger = (options) => {
+    return defaultLog.child(options)
+}
