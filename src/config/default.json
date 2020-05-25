@@ -1,0 +1,12 @@
+{
+    "logger": {
+        "app_id": "Pizarro API",
+        "streams": {
+            "level": {
+                "default": "info",
+                "format": "String"
+            }
+        }
+    },
+    "env": "dev"
+}

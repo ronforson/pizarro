@@ -1,0 +1,30 @@
+{
+  "name": "pizarro",
+  "version": "1.0.0",
+  "description": "a predictive budget system",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rexfordnana/pizarro.git"
+  },
+  "keywords": [
+    "budget"
+  ],
+  "author": "rexfordnana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rexfordnana/pizarro/issues"
+  },
+  "homepage": "https://github.com/rexfordnana/pizarro#readme",
+  "devDependencies": {
+    "eslint": "^7.1.0"
+  },
+  "dependencies": {
+    "bunyan": "^1.8.12",
+    "config": "^3.3.1"
+  }
+}
